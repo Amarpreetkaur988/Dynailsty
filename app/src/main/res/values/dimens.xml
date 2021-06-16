@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_50dp">50dp</dimen>
+    <dimen name="appBarText">16sp</dimen>
+    <dimen name="logo_150dp">150dp</dimen>
+    <dimen name="logo_200dp">200dp</dimen>
+    <dimen name="space_100dp">100dp</dimen>
+    <dimen name="btn_corner_8dp">8dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="btn_corner_5dp">5dp</dimen>
+    <dimen name="edit_text_height_45">45dp</dimen>
+    <dimen name="space_5">5dp</dimen>
+    <dimen name="margin_60dp">60dp</dimen>
+    <dimen name="margin_80dp">80dp</dimen>
+    <dimen name="margin_70dp">70dp</dimen>
+    <dimen name="height_150">150dp</dimen>
+    <dimen name="height_160">160dp</dimen>
+    <dimen name="space_120dp">120dp</dimen>
+    <dimen name="space_40dp">40dp</dimen>
+    <dimen name="space_35dp">35dp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="space_3">3dp</dimen>
+    <dimen name="space_1dp">1dp</dimen>
+    <dimen name="space_15">15dp</dimen>
+    <dimen name="nav_margin_start_25">25dp</dimen>
+    <dimen name="space_25dp">25dp</dimen>
+    <dimen name="space_20dp">20dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="calendar_height">220dp</dimen>
+    <dimen name="calendar_date_height">200dp</dimen>
+</resources>

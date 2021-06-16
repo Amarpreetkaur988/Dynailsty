@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/background_home_top">
+        <LinearLayout
+            android:id="@+id/backLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:background="@drawable/home_nav_drawer_btn_back"
+                android:orientation="vertical"
+                 >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/ic_left_arrow_icon"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_toRightOf="@id/backLinearLayout"
+            android:id="@+id/pageTitle"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACRYLIC FULLSETS"
+            android:textSize="20sp"
+            android:layout_marginRight="45dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bookServiceRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_height="match_parent" />
+</LinearLayout>

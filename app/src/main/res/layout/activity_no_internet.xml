@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NoInternetActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="@dimen/logo_200dp"
+            android:layout_marginStart="@dimen/space_20dp"
+            android:layout_marginEnd="@dimen/space_20dp"
+            android:src="@drawable/logo_splash" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ooops!"
+            android:textColor="@color/red"
+            android:textSize="@dimen/space_40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slow or no internet connection.\nCheck your internet setting"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp" />
+
+        <Button
+            android:id="@+id/tryAgainButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_background_gradient"
+            android:layout_marginEnd="@dimen/space_50dp"
+            android:layout_marginStart="@dimen/space_50dp"
+            android:layout_marginTop="@dimen/space_8"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/space_20dp"
+            android:text="Try Again"/>
+    </LinearLayout>
+
+</RelativeLayout>

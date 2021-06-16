@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigationView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@drawable/gradient_yellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/navi_userImage"
+            android:layout_width="@dimen/space_120dp"
+            android:layout_height="@dimen/space_120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_20dp"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/navi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="Gunjan Sharma"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/navi_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_3"
+            android:text="Info.omninos@gmail.com"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1dp"
+            android:layout_marginTop="@dimen/space_15"
+            android:background="#7CFFFFFF" />
+
+        <TextView
+            android:id="@+id/homeNavItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50dp"
+            android:drawableStart="@drawable/ic_home_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:drawableLeft="@drawable/ic_home_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1dp"
+            android:background="@drawable/stroke_with_faded_edges" />
+
+        <TextView
+            android:id="@+id/myAppointmentNavItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50dp"
+            android:drawableStart="@drawable/ic_calendar_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:text="My Booking"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:drawableLeft="@drawable/ic_calendar_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1dp"
+            android:background="@drawable/stroke_with_faded_edges" />
+
+        <TextView
+            android:id="@+id/settingsNavItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50dp"
+            android:drawableStart="@drawable/ic_settings_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:drawableLeft="@drawable/ic_settings_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1dp"
+            android:background="@drawable/stroke_with_faded_edges" />
+
+        <TextView
+            android:id="@+id/termsAndConditionsNavItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50dp"
+            android:drawableStart="@drawable/ic_terms_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:text="Terms and conditions"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:drawableLeft="@drawable/ic_terms_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1dp"
+            android:background="@drawable/stroke_with_faded_edges" />
+
+        <TextView
+            android:id="@+id/helpNavItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50dp"
+            android:drawableStart="@drawable/ic_help_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:text="Help"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:drawableLeft="@drawable/ic_help_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1dp"
+            android:background="@drawable/stroke_with_faded_edges" />
+
+        <TextView
+            android:id="@+id/logOutNavItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50dp"
+            android:drawableStart="@drawable/ic_logout_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:text="Log Out"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:drawableLeft="@drawable/ic_logout_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1dp"
+            android:background="@drawable/stroke_with_faded_edges" />
+    </LinearLayout>
+</android.support.design.widget.NavigationView>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:nestedScrollingEnabled="false"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".activities.ChangePasswordActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:background="@drawable/gradient_yellow_white">
+
+            <RelativeLayout
+                android:id="@+id/appBarRL"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/background_home_top">
+
+                <LinearLayout
+                    android:id="@+id/backLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/home_nav_drawer_btn_back"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:src="@drawable/ic_left_arrow_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/pageTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_toRightOf="@id/backLinearLayout"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:text="Acrylic Fullset (Small to Medium Nail Extension)"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/timeChargeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appBarRL"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:text="Time and Charges"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/timeAndCharges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timeChargeTv"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:text="2 hr 30 min | $32"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/categoryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timeAndCharges"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:singleLine="true"
+                android:text="Complex designs will incurr extra charges"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeAndCharges"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:text="Select date of your appointment"
+            android:textAllCaps="true"
+            android:textColor="@color/darkYellow"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="15dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/calendarView"
+                    android:layout_weight="3.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/gradient_yellow"
+                        android:gravity="center"
+                        android:text="TODAY"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/todayName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="Thursday"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/todayDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="14"
+                        android:textColor="@color/darkYellow"
+                        android:textSize="44sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/todayYearAndMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="May, 2019"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@color/cardview_shadow_start_color" />
+
+                <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/calendarView"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/calendar_height"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="6.5"
+                    app:mcv_selectionColor="@color/darkYellow" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeAndCharges"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="Select time of your appointment"
+            android:textAllCaps="true"
+            android:textColor="@color/darkYellow"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/hourRelativeLayout"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn_background_yellow_gradient"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp">
+
+                    <TextView
+                        android:id="@+id/hourTextTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="HOUR"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hourSelectedTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hourTextTv"
+                        android:layout_centerHorizontal="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/hourArrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="-6dp"
+                    android:src="@drawable/ic_triangle_inverted" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=":"
+                android:textColor="@color/darkYellow"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/minuteRelativeLayout"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn_background_yellow_stroke"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp">
+
+                    <TextView
+                        android:id="@+id/minuteTextTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="MINUTE"
+                        android:textColor="@color/darkYellow"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/minuteSelectedTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/minuteTextTv"
+                        android:layout_centerHorizontal="true"
+                        android:text=""
+                        android:textColor="@color/darkYellow"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/minuteArrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="-6dp"
+                    android:src="@drawable/ic_triangle_inverted" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/timeRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/logo_200dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/stafNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/bookAppointmentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_height_45"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_background_yellow_gradient"
+            android:padding="10dp"
+            android:text="Book Appointment"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

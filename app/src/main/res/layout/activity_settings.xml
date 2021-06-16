@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/background_home_top">
+
+        <LinearLayout
+            android:id="@+id/backLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:background="@drawable/home_nav_drawer_btn_back"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/ic_left_arrow_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="45dp"
+            android:layout_toRightOf="@id/backLinearLayout"
+            android:gravity="center_horizontal"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="12dp">
+
+        <TextView
+            android:id="@+id/changePasswordTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:text="Change Password"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:text="Contact Us"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:text="Share App"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
